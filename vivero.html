@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivero | Agrícola Simar</title>
+  <link rel="icon" href="SIMAR_LOGO-removebg-preview.png">
+  <link rel="stylesheet" href="vivero.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- HERO CON VIDEO -->
+  <header class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="8505961-hd_1920_1080_30fps.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+    </video>
+
+    <div class="hero-overlay">
+      <div class="top-bar">
+        <a href="trabajos.html" class="back-btn"><i class="bi bi-arrow-left"></i></a>
+        <img src="SIMAR_LOGO-removebg-preview.png" alt="Logo Agrícola Simar" class="logo">
+      </div>
+      <div class="hero-content">
+        <h1>Vivero de Cacao</h1>
+        <p>Donde sembramos calidad, sostenibilidad y futuro.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN INTRODUCCIÓN -->
+  <section class="intro">
+    <div class="container">
+      <h2>🌱 Nuestro Vivero</h2>
+      <p>
+        En Agrícola Simar, contamos con un vivero especializado en la producción de plantas de cacao
+        de alta calidad genética y sanitaria, cumpliendo con las normas establecidas por el ICA.
+      </p>
+      <p>
+        Nuestras instalaciones están diseñadas para garantizar el óptimo desarrollo de cada planta,
+        desde la germinación hasta su etapa final, promoviendo prácticas sostenibles y responsables.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN IMÁGENES DESTACADAS -->
+  <section class="galeria">
+    <h2>🌿 Nuestro Proceso</h2>
+    <div class="galeria-grid">
+      <img src="vivero1.jpg" alt="Vivero Cacao 1" class="reveal">
+      <img src="vivero2.jpg" alt="Vivero Cacao 2" class="reveal">
+      <img src="vivero3.jpg" alt="Vivero Cacao 3" class="reveal">
+    </div>
+  </section>
+
+  <!-- SECCIÓN VALORES -->
+  <section class="valores">
+    <div class="container">
+      <h2>🌰 Nuestros Valores</h2>
+      <div class="valores-grid">
+        <div class="valor reveal">
+          <i class="bi bi-tree"></i>
+          <h3>Sostenibilidad</h3>
+          <p>Trabajamos con técnicas responsables que protegen los recursos naturales.</p>
+        </div>
+        <div class="valor reveal">
+          <i class="bi bi-flower3"></i>
+          <h3>Calidad</h3>
+          <p>Cada planta es cultivada con atención, garantizando la mejor genética y sanidad.</p>
+        </div>
+        <div class="valor reveal">
+          <i class="bi bi-people"></i>
+          <h3>Compromiso</h3>
+          <p>Estamos comprometidos con el desarrollo de los productores y el futuro del cacao colombiano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN VIDEO PUBLICITARIO -->
+  <section class="video-seccion">
+    <h2>🎥 Conoce nuestro vivero</h2>
+    <div class="video-container reveal">
+      <iframe src="C146071E-5DA8-43e7-8BF0-7D054D00D878_video.mp4" 
+        title="Video Vivero Agrícola Simar" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Sembramos futuro a través de innovación, sostenibilidad y pasión por el campo.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="injertacion.html">Injertación</a></li>
+          <li><a href="poda.html">Poda</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/agricolasimar.sas.7/"><i class="bi bi-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/agricola_simar"><i class="bi bi-instagram"></i> Instagram</a></li>
+          <li><a href="mailto:agricolasimarsas@gmail.com"><i class="bi bi-envelope"></i> Gmail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copywrap">
+      <p>&copy; 2025 Agrícola Simar S.A.S. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Animaciones con Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
